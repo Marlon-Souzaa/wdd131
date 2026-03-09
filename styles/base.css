@@ -15,9 +15,14 @@ header{
     text-align:center;
     padding:0px;
 }
+#course-title{
+    display: grid;
+    place-items: center;
+    
 
+}
 nav{
-    margin-top:10px;
+    margin-top:5px;
     background-color:#030303;
 }
 
@@ -35,6 +40,9 @@ nav a{
     font-weight:bold;
    
 }
+nav a:hover{
+    color:#1650fe;
+}
 
 h2{
     text-align:center;
@@ -42,19 +50,26 @@ h2{
 }
 
 
-.container{
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    padding:20px;
+main{
+display:grid;
+grid-template-columns: 2fr 1fr;
+gap:20px;
+padding:20px;
+max-width:1000px;
+margin:auto;
 }
 
-.about{
-    background:white;
-    padding:20px;
-    width:500px;
-    border-radius:6px;
-    box-shadow:0 0 5px rgba(0,0,0,0.2);
+h2{
+    text-align:center;
+    margin:20px;
+    grid-column:1 / 3;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:6px;
+box-shadow:0 0 5px rgba(0,0,0,0.2);
 }
 
 .about-content{
@@ -77,13 +92,15 @@ h2{
 
 .brazil img{
     width:100px;
+    flex-shrink: 0;
 }
-
+.brazil p{
+    flex: 1;
+}
 
 .resources{
 background:white;
 padding:20px;
-width:250px;
 border-radius:6px;
 box-shadow:0 0 5px rgba(0,0,0,0.2);
 }
