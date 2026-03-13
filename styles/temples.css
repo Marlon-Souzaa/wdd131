@@ -21,7 +21,6 @@ header{
 #menu{
     font-size: 2rem;
     border: 0;
-    background-color: none;
     cursor: pointer;
 }
 #menu::before{
@@ -60,22 +59,19 @@ nav a{
 
 nav a:hover{
     text-decoration: underline;
-    background-color: #3b3b3b;
     color:khaki;
 }
 
 /*main*/
 
-section{
-    margin: 1rem auto;
-    max-width: 800px;
-    padding: 0.5rem;
+
     
-}
 h2{
     font-weight: 700;
     border-bottom: 1px solid  #3b3b3b ;
     margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    grid-column: span 3;
 }
 .container{
     display: grid;
