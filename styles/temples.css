@@ -1,0 +1,107 @@
+/*#3b3b3b cor 1
+khaki cor 2
+#fff cor 3*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+header{
+    background-color: #bbb;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 15px;
+
+}
+#menu{
+    font-size: 2rem;
+    border: 0;
+    background-color: none;
+    cursor: pointer;
+}
+#menu::before{
+    content: "☰";
+}
+.navigation{
+    display: none;
+
+}
+.navigation.open {
+    display: block;
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+nav{
+    background-color: #3b3b3b ;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    display: block;
+    color: #bbb;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: #3b3b3b;
+    color:khaki;
+}
+
+/*main*/
+
+section{
+    margin: 1rem auto;
+    max-width: 800px;
+    padding: 0.5rem;
+    
+}
+h2{
+    font-weight: 700;
+    border-bottom: 1px solid  #3b3b3b ;
+    margin-bottom: 1rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    place-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+figcaption{
+    font-size: smaller;
+}
+figure{
+    text-align: center;
+}
+
+
+footer{
+background: #3b3b3b;
+color:#eee;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
