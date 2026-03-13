@@ -40,6 +40,7 @@ header{
 
 nav{
     background-color: #3b3b3b ;
+    color: white;
 }
 
 nav ul{
@@ -64,7 +65,9 @@ nav a:hover{
 
 /*main*/
 
-
+.hover:hover {
+    box-shadow: 0 0 30px #3b3b3b;
+}
     
 h2{
     font-weight: 700;
