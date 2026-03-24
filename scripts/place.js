@@ -19,4 +19,4 @@ const wind= 5;
 
 const windChill =calculateWindChill( temp,wind);
 
-document.querySelector("#windChill").textContent = windChill ;
+document.querySelector("#windchill").textContent = windChill ;
