@@ -1,0 +1,130 @@
+/*#009739 = cor1
+#FFDF00 = cor2
+white= cor3
+#002278= cor4*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto',Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #009739 , #FFDF00);
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.hero picture {
+  width: 100%;
+
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+section {
+ position: static;
+ width: 100%;
+ margin:10px 0;
+ text-align: center;
+}
+
+.data {
+  top: 20px;
+  left: 20px;
+}
+
+.weather {
+  bottom: 20px;
+  right: 20px;
+}
+
+    
+    
+
+
+
+@media (min-width: 768px) {
+  .weather h2::after {
+    content: " ⛅";
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+ }
+
+ .hero picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+  }
+
+ .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
+ }
+
+ section {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  width: 220px;
+  border-radius: 5px;
+  text-align: left;
+ }
+
+ .data {
+  top: 20px;
+  left: 20px;
+ }
+
+ .weather {
+  bottom: 20px;
+  right: 20px;
+ }
+ .weather h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+ }
+
+  }
+
+section h2 {
+  background:#002278;
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #009739;
+  color: white;
+}
