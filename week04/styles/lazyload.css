@@ -1,0 +1,29 @@
+*{
+
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+img{
+    width: 100%;
+    background-color: black;
+    animation: fade 15s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
