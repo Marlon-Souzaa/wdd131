@@ -14,7 +14,7 @@ main p {
     color: black;
 }
 
-/* Caixa de confirmação */
+
 main {
     max-width: 600px;
     margin: 20px auto;
@@ -24,13 +24,13 @@ main {
     text-align: center;
 }
 
-/* Mensagem principal */
+
 main p:first-child {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-/* Footer igual ao form */
+
 footer {
     text-align: center;
     background: khaki;

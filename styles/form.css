@@ -13,7 +13,7 @@ body {
     background: #fff;
 }
 
-/* Header */
+
 header {
     background: khaki ;
     color: #3b3b3b ;
@@ -21,7 +21,7 @@ header {
     padding: 1rem;
 }
 
-/* Main */
+
 main {
     max-width: 600px;
     margin: 20px auto;
@@ -30,7 +30,7 @@ main {
     border-radius: 8px;
 }
 
-/* Form */
+
 form {
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ fieldset label {
     margin-bottom: 5px;
 }
 
-/* Button */
+
 input[type="submit"] {
     background: #fcfcfc ;
     font-weight: bold;
@@ -79,7 +79,7 @@ input[type="submit"]:hover {
     background: khaki;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     background: khaki ;
@@ -88,7 +88,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsivo */
+
 @media (min-width: 768px) {
     main {
         padding: 30px;
