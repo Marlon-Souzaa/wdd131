@@ -1,0 +1,44 @@
+/*#3b3b3b cor 1
+khaki cor 2
+#fff cor 3*/
+
+main p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    
+}
+
+#counter {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+}
+
+/* Caixa de confirmação */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #cfcacf;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Mensagem principal */
+main p:first-child {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Footer igual ao form */
+footer {
+    text-align: center;
+    background: khaki;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}

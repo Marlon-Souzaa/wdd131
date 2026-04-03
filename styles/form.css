@@ -1,0 +1,96 @@
+/*#3b3b3b cor 1
+khaki cor 2
+#fff cor 3*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* Header */
+header {
+    background: khaki ;
+    color: #3b3b3b ;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Button */
+input[type="submit"] {
+    background: #fcfcfc ;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background: khaki;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: khaki ;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    main {
+        padding: 30px;
+    }
+}
