@@ -93,6 +93,9 @@ header a {
   padding: 30px 40px;
   background-color: var(--background-color)
 }
+.launch-card a{
+  color:var(--contrast-color)
+}
 
 .launch-card .container {
   display: flex;
@@ -382,7 +385,9 @@ button:hover {
     height: auto;
     border-radius: 8px;
 }
-
+.books a{
+  color: var(--contrast-color);
+}
 .books p {
     margin: 5px 0;
     text-align: left;
