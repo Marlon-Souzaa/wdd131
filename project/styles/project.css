@@ -1,11 +1,23 @@
 :root {
-    --main-color:#f48835;
+   /* --main-color:#f48835;
     --contrast-color:#0f2f88c9;
     --background-color:#e4e2e2;
     --background-color2:#ebebea;
-    --letter-color:#333;
-}
+    --letter-color:#333;*/
 
+
+      --main-color:#3e3d3d;         
+     --contrast-color:#c9a96e;     
+     --background-color:#2b2828;
+     --background-color2:#1a1a1a;
+    --letter-color:#eaeaea;
+
+   /*--main-color:#ff7b54;         
+  --contrast-color:#2d3142;     
+  --background-color:#fff5f0;
+  --background-color2:#ffe3d8;
+  --letter-color:#2b2b2b;*/
+}
 
 
 * {
@@ -62,7 +74,7 @@ header ul {
 header a {
   
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--background-color2)
   
   
 }
@@ -78,7 +90,7 @@ header a {
 }
 
 .launch-card {
-  padding: 60px 40px;
+  padding: 30px 40px;
   background-color: var(--background-color)
 }
 
@@ -102,7 +114,10 @@ header a {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-
+}
+.book img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
 }
 
 .form {
@@ -126,7 +141,7 @@ header a {
 
 }
 span {
-    color: rgb(255, 3, 3);
+    color: var(--contrast-color);
     font-weight: 700;
 }
 .form button {
@@ -148,6 +163,13 @@ span {
 }
 .card{
     border-radius: 1%;
+    background: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
 
 
 }
@@ -156,7 +178,10 @@ span {
   height: 320px;
   object-fit: contain;
 }
-
+.card img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
 
  .card p,
  .launch-card {
@@ -249,13 +274,13 @@ span {
 .data h1{
   margin: 20px;
 }
-.data h3, 
-p {
+.data h3 
+ {
   margin: 15px;
 }
 
 .span1 {
-  color:#333;
+  color:var(--letter-color);
   font-family: 'Playfair Display';
   font-style: italic;
   margin-top: 50px;
@@ -294,8 +319,8 @@ p {
 
 
 .form2 input,
-select,
-textarea {
+.form2 select,
+.form2 textarea {
   width: 100%;
   border: none;
   border-bottom: 1px solid var(--contrast-color);
@@ -303,6 +328,11 @@ textarea {
   padding: 8px 0;
   font-size: 16px;
   outline: none;
+  color: var(--letter-color);
+}
+.form2 select{
+  background-color: var(--background-color2);
+  color: var(--letter-color);
 }
 
 
@@ -326,7 +356,42 @@ button:hover {
   opacity: 0.9;
 }
 
+/*book page*/
 
+.shop {
+  margin-left: 60px;
+  
+}
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.books div {
+    background: var(--background-color2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(155, 154, 154, 0.1);
+}
+
+.books img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.books p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.books div:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
 footer {
   text-align: center;
   padding: 20px;
@@ -338,8 +403,11 @@ footer {
 
   .launch-card .container,
   .portfolio,
-  .profile , .contact  {
+  .profile , .contact {
     flex-direction: column;
+  }
+  .books{
+    grid-template-columns: 1fr;
   }
 
   header {
