@@ -1,48 +1,49 @@
-const year = document.querySelector("#year");
-const lastModified = document.querySelector("#lastModified");
+document.addEventListener("DOMContentLoaded", () => {
 
-year.textContent = new Date().getFullYear();
-lastModified.textContent = document.lastModified;
+  // Footr
+  const year = document.querySelector("#year");
+  const lastModified = document.querySelector("#lastModified");
 
- const form = document.querySelector(".contact-form");
+  if (year) year.textContent = new Date().getFullYear();
+  if (lastModified) lastModified.textContent = document.lastModified;
 
-// pega mensagens já salvas OU cria array vazio
-let messages = JSON.parse(localStorage.getItem("messages")) || [];
+  // hamburguer
+  const menuButton = document.getElementById("menu");
+  const navigation = document.querySelector(".navigation");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const name = document.querySelector("#name").value;
-  const email = document.querySelector("#email").value;
-  const messageText = document.querySelector("textarea").value;
-
-  // validação
-  if (name === "" || email === "" || messageText === "") {
-    alert("Please fill all fields");
-    return;
+  if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+      menuButton.classList.toggle("open");
+      navigation.classList.toggle("open");
+    });
   }
 
-  // cria objeto mensagem
-  const message = {
-    name: name,
-    email: email,
-    text: messageText
-  };
+  // Form
+  const form = document.querySelector(".contact-form");
 
-  // adiciona no array
-  messages.push(message);
+  let messages = JSON.parse(localStorage.getItem("messages")) || [];
 
-  // salva no localStorage
-  localStorage.setItem("messages", JSON.stringify(messages));
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-  // mostra quantidade
-  alert(`Message sent! Total messages: ${messages.length}`);
+      const name = document.querySelector("#name")?.value;
+      const email = document.querySelector("#email")?.value;
+      const messageText = document.querySelector("textarea")?.value;
 
-  // limpa form
-  form.reset();
+      if (!name || !email || !messageText) {
+        alert("Please fill all fields");
+        return;
+      }
+
+      const message = { name, email, text: messageText };
+
+      messages.push(message);
+      localStorage.setItem("messages", JSON.stringify(messages));
+
+      alert(`Message sent! Total messages: ${messages.length}`);
+      form.reset();
+    });
+  }
+
 });
-
-const counter = document.createElement("p");
-document.body.appendChild(counter);
-
-counter.textContent = `Total messages: ${messages.length}`;
